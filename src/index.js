@@ -4,8 +4,6 @@ import { BrowserRouter as Router } from 'react-router-dom'
 
 import Routing from './Routing'
 
-import './index.css'
-
 const virtualDom = document.getElementById('root')
 
 if (virtualDom !== null) {
