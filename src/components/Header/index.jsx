@@ -47,8 +47,8 @@ export const Header = () => {
 
       <div className={s.header__help_part}>
         <button className={s.header__add_task}>Добавить задание</button>
-        <Link to="/"><img src={sertificate} alt="" /></Link>
-        <Link to="/"><img src={notification} alt="" /></Link>
+        <Link to="/"><img className={s.header__sertificate} src={sertificate} alt="" /></Link>
+        <Link to="/"><img className={s.header__notification} src={notification} alt="" /></Link>
         <button className={s.header__user_profile}>NV</button>
         <div className={s.header__burger_menu}>
           <div className={s.header__menu_items}></div>

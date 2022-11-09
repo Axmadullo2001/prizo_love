@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     font-family: 'proxima-nova', sans-serif;
-    padding: 0px 40px 25px;
+    padding: 0px 0px 25px 50px;
 
     &__left_block {
         display: flex;
@@ -46,22 +46,35 @@
     }
 
     &__user_profile {
-        width: 54px;
+        width: 45px;
         height: 45px;
-        background-color: rgba(255, 19, 76, 1);
+        padding: 12px 11px 12px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-transform: uppercase;
+        background-color: rgba(255, 19, 76, 1);
         font-size: 17px;
         text-align: center;
         line-height: 21px;
+        border: none;
+        border-radius: 50%;
+        font-family: 'Proxima Nova';
+        color: white;
+        cursor: pointer;
+        margin: 0 20px;
     }
 
     &__burger_menu {
         position: relative;
+        cursor: pointer;
+        width: 80px;
+        display: block;
     }
 
     &__menu_items {
-        height: 2px;
-        width: 24px;
+        height: 1.88px;
+        width: 22.46px;
         background-color: black;
         position: absolute;
     }
@@ -83,8 +96,9 @@
     }
 
     &__add_task {
-        width: 152px;
+        width: 153px;
         height: 35px;
+        line-height: 19px;
         font-size: 15px;
         color: white;
         background-color: rgba(47, 204, 109, 1);
@@ -92,5 +106,18 @@
         border-radius: 3px;
         border: none;
         box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, .5);
+        margin: 0 32px 0 0px;
+    }
+
+    &__sertificate {
+        width: 21px;
+        height: 21px;
+        margin-top: 10px;
+    }
+
+    &__notification {
+        margin: 10px 0px 0 32px;
+        width: 17px;
+        height: 21px;
     }
 }
