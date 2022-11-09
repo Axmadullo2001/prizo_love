@@ -17,23 +17,30 @@ export const Header = () => {
       <div className={s.header__left_block}>
         <Link to="/"><img src={logo} alt="" /></Link>
         <ul className={s.header__navbar}>
-          <Link to="/" className={`${s.header__task_item} ${s.header__navbar_link}`}>
-            <img src={task} alt="" />
-            <img src={task} alt="" className={s.header__task_icon} />
-            <span>Задания</span>
-          </Link>
-          <Link to="/" className={s.header__navbar_link}>
-            <img src={trash} alt="" />
-            <span>Витрина</span>
-          </Link>
-          <Link to="/" className={s.header__navbar_link}>
-            <img src={victories} alt="" />
-            <span>Розыгрыши</span>
-          </Link>
-          <Link to="/" className={s.header__navbar_link}>
-            <img src={business} alt="" />
-            <span>Бизнес</span>
-          </Link>
+          <li className={s.header__navbar_list}>
+            <Link to="/" className={`${s.header__task_item} ${s.header__navbar_link}`}>
+              <img className={s.header__nav_img} src={task} alt="" />
+              <p>Задания</p>
+            </Link>
+          </li>
+          <li className={s.header__navbar_list}>
+            <Link to="/" className={s.header__navbar_link}>
+              <img className={s.header__nav_img} src={trash} alt="" />
+              <p>Витрина</p>
+            </Link>
+          </li>
+          <li className={s.header__navbar_list}>
+            <Link to="/" className={s.header__navbar_link}>
+              <img className={s.header__nav_img} src={victories} alt="" />
+              <p>Розыгрыши</p>
+            </Link>
+          </li>
+          <li className={s.header__navbar_list}>
+            <Link to="/" className={`${s.header__navbar_link} ${s.header__navbar_hypertext}`}>
+              <img className={s.header__nav_img} src={business} alt="" />
+              <p>Бизнес</p>
+            </Link>
+          </li>
 
         </ul>
       </div>

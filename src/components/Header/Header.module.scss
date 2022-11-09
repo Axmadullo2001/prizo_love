@@ -1,29 +1,48 @@
 .header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     font-family: 'proxima-nova', sans-serif;
-    padding: 25px 40px 25px;
+    padding: 0px 40px 25px;
 
     &__left_block {
         display: flex;
         align-items: center;
     }
 
+    &__navbar {
+        display: flex;
+        list-style: none;
+    }
+
     &__navbar_link {
-        padding: 0 20px;
+        padding: 0 25px;
         height: 75px;
-        border-left: 2px solid rgba(73, 73, 73, 1);
+        border-left: 1px solid rgba(73, 73, 73, .1);
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__navbar_link:last-child {
+        border-right: 1px solid rgba(73, 73, 73, .1);
     }
 
     &__task_item {
         position: relative;
+        color: rgba(85, 37, 181, 1);
+    }
+
+    &__nav_img {
+        width: 31px;
+        height: 28px;
+        margin: auto;
     }
 
     &__task_icon {
         position: absolute;
-        left: 12px;
+        left: 50px;
         bottom: 4px;
-        transform: rotate(45deg);
     }
 
     &__user_profile {
