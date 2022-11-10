@@ -1,10 +1,20 @@
+@import '../../scss/variables';
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-family: 'proxima-nova', sans-serif;
-    padding: 0px 0px 0 50px;
-    // background-color: red;
+    padding: 0px;
+
+    a:hover svg path, a:hover svg circle {
+        fill: $light-red;
+        color: $light-red;
+    }
+
+    &__logo {
+        padding: 25px 50px 25px 25px;
+    }
 
     &__left_block {
         display: flex;
@@ -17,22 +27,23 @@
         margin: 0;
     }
 
+
     &__navbar_link {
         padding: 12px 25px;
         height: 75px;
-        border-left: 1px solid rgba(73, 73, 73, .1);
+        border-left: 1px solid $border-color;
         text-decoration: none;
         display: flex;
         flex-direction: column;
     }
 
     &__navbar_link:last-child {
-        border-right: 1px solid rgba(73, 73, 73, .1);
+        border-right: 1px solid $border-color;
     }
 
     &__task_item {
         position: relative;
-        color: rgba(85, 37, 181, 1);
+        color: $active-link-color;
     }
 
     &__nav_img {
@@ -41,14 +52,15 @@
         margin: auto;
     }
 
-    &__nav_img:hover  {
-        fill: red;
-    }
-
     &__link_item {
         font-size: 15px;
-        color: rgba(73, 73, 73, 1);
+        color: $inactive-link-color;
+        font-family: 'Proxima Nova';
     }
+
+    &__link_item:hover {
+        color: $light-red;
+    } 
 
     &__task_icon {
         position: absolute;
@@ -64,7 +76,7 @@
         justify-content: center;
         align-items: center;
         text-transform: uppercase;
-        background-color: rgba(255, 19, 76, 1);
+        background-color: $light-red;
         font-size: 17px;
         text-align: center;
         line-height: 21px;
@@ -112,13 +124,19 @@
         line-height: 19px;
         font-size: 15px;
         color: white;
-        background-color: rgba(47, 204, 109, 1);
+        background-color: $add-task-btn;
         cursor: pointer;
         border-radius: 3px;
         border: none;
-        box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, .5);
+        box-shadow: 0px 2px 2px 0 $add-task-shadow;
         margin: 0 32px 0 0px;
+        font-family: 'Proxima Nova';
     }
+
+    &__add_task:hover {
+        background-color: $green;
+        opacity: 1;
+    } 
 
     &__sertificate {
         width: 21px;
@@ -134,5 +152,102 @@
 }
 
 .header_catalog {
-    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    background-color: $catalog_bg;
+
+    &__toggle_btn {
+        display: flex;
+        padding: 21px 53px 21px 40px;
+        background-color: $catalog_btn;
+        margin: 0;
+    }
+
+    &__toggle_text {
+        font-size: 15px;
+        font-family: 'proxima-nova', sans-serif;
+        line-height: 19px;
+        color: $white;
+        margin-left: 10px;
+    }
+
+    &__toggle_btn:hover {
+        background-color: $catalog-btn-hover;
+        opacity: .8;
+    }
+
+    &__search_box {
+        margin-top: 10px;
+        position: relative;
+    }
+
+    &__search_icon {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+    }
+
+    &__search_panel {
+        width: 662px;
+        height: 40px;
+        border-radius: 3px;
+        border: 1px solid $search-border-solid;
+        padding: 10px 0 10px 42px;
+        border-radius: 3px;
+    }
+
+    &__search_panel::placeholder {
+        font-family: 'proxima-nova', sans-serif;
+    }
+
+    &__search_btn {
+        padding: 10px 28px;
+        background-color: $light-red;
+        width: 100px;
+        height: 38px;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        color: $white;
+        margin-top: 10px;
+        font-family: 'proxima-nova', sans-serif;
+    }
+
+    &__search_btn:hover {
+        background-color: $light-red;
+        opacity: .7;
+    } 
+
+    &__dollar_icon {
+        margin-top: 11px;
+        margin-right: 10px;
+    }
+
+    &__right_part {
+        display: flex;
+        margin-right: 24px;
+        margin: 12px 0 5px 0px;
+    }
+
+    &__product_in_basket {
+        margin-right: 45px;
+    }
+
+    &__original_text {
+        color: $light_black;
+        font-size: 15px;
+        font-family: 'proxima-nova', sans-serif;
+        line-height: 18.27px;
+    }
+
+    &__count_of_product {
+        font-family: 'proxima-nova', sans-serif;
+    }
+
+    &__basket_icon {
+        margin-top: 10px;
+        margin-right: 10px;
+    }
 }
