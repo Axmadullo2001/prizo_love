@@ -1,12 +1,12 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 
-import { Store } from './pages/Store'
+import { HomePage } from './pages/HomePage'
 
 function Routing() {
   return (
     <Routes>
-      <Route path="/" element={<Store />} />
+      <Route path="/" element={<HomePage />} />
     </Routes>
   )
 }
