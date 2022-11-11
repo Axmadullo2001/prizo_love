@@ -10,8 +10,8 @@
         background-color: #F2F2F2;
         width: 262px;
         min-height: 400px;
-        margin: 25px 0px;
-        padding: 0px 0px 0 0px;
+        margin: 25px 0px 25px 0;
+        padding: 0px 0px 35px 0px;
         font-family: 'Proxima Nova';
     }
 
@@ -22,7 +22,14 @@
         padding: 10px 13px;
         margin-right: 0px;
         cursor: pointer;
-        border-bottom: 1px solid #000;
+    }
+
+    &__list:hover svg path {
+        fill: #FAA525;
+    }
+
+    &__list:hover span {
+        color: #FAA525;
     }
 
     &__navbar_icon {
