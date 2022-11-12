@@ -2,6 +2,8 @@ import React from 'react'
 
 import { Header } from '../../components/Header'
 import banner from '../../assets/images/Store/slider_image.png'
+import incart_icon1 from '../../assets/images/Store/in_cart_icon1.png'
+import incart_icon2 from '../../assets/images/Store/in_cart_icon2.png'
 
 import s from './HomePage.module.scss'
 
@@ -297,38 +299,106 @@ export const HomePage = () => {
           </div>
         </section>
         <main className={s.home_page__main}>
-          <button>
-            <svg className={s.home_page__left_direction_icon} width="24" height="76" viewBox="0 0 24 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4.24718 38.4289L23.4016 5.85219C24.0637 4.72581 24.0637 2.89968 23.4016 1.7733C22.7392 0.647263 21.6655 0.647263 21.0033 1.7733L0.649732 36.3894C-0.0123537 37.5158 -0.0123537 39.3419 0.649732 40.4683L21.0033 75.0844C21.6771 76.1912 22.7508 76.1594 23.4016 75.0134C24.0363 73.8955 24.0363 72.1233 23.4016 71.0055L4.24718 38.4289Z" fill="white" />
-            </svg>
-          </button>
+          <div>
+            <button>
+              <svg className={s.home_page__left_direction_icon} width="24" height="76" viewBox="0 0 24 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.24718 38.4289L23.4016 5.85219C24.0637 4.72581 24.0637 2.89968 23.4016 1.7733C22.7392 0.647263 21.6655 0.647263 21.0033 1.7733L0.649732 36.3894C-0.0123537 37.5158 -0.0123537 39.3419 0.649732 40.4683L21.0033 75.0844C21.6771 76.1912 22.7508 76.1594 23.4016 75.0134C24.0363 73.8955 24.0363 72.1233 23.4016 71.0055L4.24718 38.4289Z" fill="white" />
+              </svg>
+            </button>
 
-          <img className={s.home_page__banner} src={banner} alt="" />
+            <img className={s.home_page__banner} src={banner} alt="" />
 
-          <button>
-            <svg className={s.home_page__right_direction_icon} width="46" height="92" viewBox="0 0 46 92" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_256_1931)" filter="url(#filter0_d_256_1931)">
-                <path d="M15.2472 43.4289L34.4016 10.8522C35.0637 9.72581 35.0637 7.89968 34.4016 6.7733C33.7392 5.64726 32.6655 5.64726 32.0033 6.7733L11.6497 41.3894C10.9876 42.5158 10.9876 44.3419 11.6497 45.4683L32.0033 80.0844C32.6771 81.1912 33.7508 81.1594 34.4016 80.0134C35.0363 78.8955 35.0363 77.1233 34.4016 76.0055L15.2472 43.4289Z" fill="white" />
-              </g>
-              <defs>
-                <filter id="filter0_d_256_1931" x="-7.01343" y="0.928711" width="60.0781" height="90.9655" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                  <feOffset dy="3" />
-                  <feGaussianBlur stdDeviation="4" />
-                  <feColorMatrix type="matrix" values="0 0 0 0 0.333333 0 0 0 0 0.145098 0 0 0 0 0.709804 0 0 0 0.3 0" />
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_256_1931" />
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_256_1931" result="shape" />
-                </filter>
-                <clipPath id="clip0_256_1931">
-                  <rect width="44.0781" height="74.9655" fill="white" transform="translate(0.986572 5.92871)" />
-                </clipPath>
-              </defs>
-            </svg>
-          </button>
+            <button>
+              <svg className={s.home_page__right_direction_icon} width="46" height="92" viewBox="0 0 46 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_256_1931)" filter="url(#filter0_d_256_1931)">
+                  <path d="M15.2472 43.4289L34.4016 10.8522C35.0637 9.72581 35.0637 7.89968 34.4016 6.7733C33.7392 5.64726 32.6655 5.64726 32.0033 6.7733L11.6497 41.3894C10.9876 42.5158 10.9876 44.3419 11.6497 45.4683L32.0033 80.0844C32.6771 81.1912 33.7508 81.1594 34.4016 80.0134C35.0363 78.8955 35.0363 77.1233 34.4016 76.0055L15.2472 43.4289Z" fill="white" />
+                </g>
+                <defs>
+                  <filter id="filter0_d_256_1931" x="-7.01343" y="0.928711" width="60.0781" height="90.9655" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                    <feOffset dy="3" />
+                    <feGaussianBlur stdDeviation="4" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0.333333 0 0 0 0 0.145098 0 0 0 0 0.709804 0 0 0 0.3 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_256_1931" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_256_1931" result="shape" />
+                  </filter>
+                  <clipPath id="clip0_256_1931">
+                    <rect width="44.0781" height="74.9655" fill="white" transform="translate(0.986572 5.92871)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
+
+          <div className={s.home_page__in_cart}>
+            <div className={s.home_page__incart_left_part}>
+              <div className={s.home_page__product_item}>
+                <p className={s.home_page__product_in_basket_count}>В корзине <span className={s.home_page__product_count}>2 товара</span></p>
+                <p className={s.home_page__product_price}>На сумму 18 999 ₴</p>
+              </div>
+              <div className={s.home_page__in_basket_content}>
+                <img className={s.home_page__card_border} src={incart_icon1} alt="" />
+                <button className={s.home_page__remove_card}>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="9.5" fill="white" stroke="#F7F7F7" />
+                    <g clip-path="url(#clip0_257_66)">
+                      <path d="M5.84469 7.52231C5.60841 7.52231 5.4446 7.28345 5.53319 7.06441C5.84777 6.28671 6.61076 5.7366 7.49991 5.7366H7.91094C8.06422 4.92693 8.77411 4.28571 9.64277 4.28571H10.3571C11.2252 4.28571 11.9355 4.92651 12.0889 5.7366H12.4999C13.3891 5.7366 14.1521 6.28671 14.4666 7.06441C14.5552 7.28345 14.3914 7.52231 14.1551 7.52231H5.84469ZM10.3571 4.95535H9.64277C9.15393 4.95535 8.73897 5.28423 8.59928 5.7366H11.4005C11.2608 5.28423 10.8459 4.95535 10.3571 4.95535Z" fill="#676767" />
+                      <path d="M13.2353 14.7812C13.1981 15.3044 12.758 15.7143 12.2334 15.7143H7.76644C7.24189 15.7143 6.80178 15.3044 6.76452 14.7812L6.29526 8.19196H13.7046L13.2353 14.7812ZM9.08432 9.98327C9.07508 9.79859 8.9176 9.65615 8.73321 9.66559C8.54852 9.67483 8.40629 9.83204 8.41553 10.0167L8.5941 13.5881C8.60305 13.7671 8.751 13.9062 8.92823 13.9062C9.12102 13.9062 9.27242 13.745 9.26292 13.5547L9.08432 9.98327ZM11.2666 9.66559C11.0822 9.65633 10.9247 9.79861 10.9155 9.98327L10.737 13.5547C10.7274 13.7451 10.879 13.9062 11.0716 13.9062C11.2489 13.9062 11.3968 13.7671 11.4058 13.5881L11.5843 10.0167C11.5936 9.83204 11.4513 9.67483 11.2666 9.66559V9.66559Z" fill="#676767" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_257_66">
+                        <rect width="11.4286" height="11.4286" fill="white" transform="matrix(-1 0 0 1 15.7143 4.28571)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+
+                <img className={s.home_page__card_border} src={incart_icon2} alt="" />
+                <button className={s.home_page__remove_card_second}>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="9.5" fill="white" stroke="#F7F7F7" />
+                    <g clip-path="url(#clip0_257_66)">
+                      <path d="M5.84469 7.52231C5.60841 7.52231 5.4446 7.28345 5.53319 7.06441C5.84777 6.28671 6.61076 5.7366 7.49991 5.7366H7.91094C8.06422 4.92693 8.77411 4.28571 9.64277 4.28571H10.3571C11.2252 4.28571 11.9355 4.92651 12.0889 5.7366H12.4999C13.3891 5.7366 14.1521 6.28671 14.4666 7.06441C14.5552 7.28345 14.3914 7.52231 14.1551 7.52231H5.84469ZM10.3571 4.95535H9.64277C9.15393 4.95535 8.73897 5.28423 8.59928 5.7366H11.4005C11.2608 5.28423 10.8459 4.95535 10.3571 4.95535Z" fill="#676767" />
+                      <path d="M13.2353 14.7812C13.1981 15.3044 12.758 15.7143 12.2334 15.7143H7.76644C7.24189 15.7143 6.80178 15.3044 6.76452 14.7812L6.29526 8.19196H13.7046L13.2353 14.7812ZM9.08432 9.98327C9.07508 9.79859 8.9176 9.65615 8.73321 9.66559C8.54852 9.67483 8.40629 9.83204 8.41553 10.0167L8.5941 13.5881C8.60305 13.7671 8.751 13.9062 8.92823 13.9062C9.12102 13.9062 9.27242 13.745 9.26292 13.5547L9.08432 9.98327ZM11.2666 9.66559C11.0822 9.65633 10.9247 9.79861 10.9155 9.98327L10.737 13.5547C10.7274 13.7451 10.879 13.9062 11.0716 13.9062C11.2489 13.9062 11.3968 13.7671 11.4058 13.5881L11.5843 10.0167C11.5936 9.83204 11.4513 9.67483 11.2666 9.66559V9.66559Z" fill="#676767" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_257_66">
+                        <rect width="11.4286" height="11.4286" fill="white" transform="matrix(-1 0 0 1 15.7143 4.28571)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+
+              </div>
+            </div>
+
+            <div className={s.home_page__incart_right_part}>
+              <button className={s.home_page__add_to_basket}>В корзину</button>
+              <button className={s.home_page__order_offer}>Оформить заказ</button>
+              <button>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.5" clip-path="url(#clip0_257_81)">
+                    <path d="M9.46586 8.01235L15.6959 1.78208C16.1014 1.37682 16.1014 0.721584 15.6959 0.31633C15.2907 -0.0889232 14.6355 -0.0889232 14.2302 0.31633L7.99992 6.5466L1.76983 0.31633C1.36439 -0.0889232 0.709337 -0.0889232 0.304083 0.31633C-0.101361 0.721584 -0.101361 1.37682 0.304083 1.78208L6.53417 8.01235L0.304083 14.2426C-0.101361 14.6479 -0.101361 15.3031 0.304083 15.7084C0.506045 15.9105 0.771596 16.0121 1.03696 16.0121C1.30232 16.0121 1.56768 15.9105 1.76983 15.7084L7.99992 9.47809L14.2302 15.7084C14.4324 15.9105 14.6977 16.0121 14.9631 16.0121C15.2284 16.0121 15.4938 15.9105 15.6959 15.7084C16.1014 15.3031 16.1014 14.6479 15.6959 14.2426L9.46586 8.01235Z" fill="#676767" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_257_81">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+
+            </div>
+          </div>
+
+          <div className={s.home_page__best_offers}>
+
+          </div>
 
         </main>
       </div>
+
     </div>
   )
 }
