@@ -1,2 +1,18 @@
+@import '../scss/variables';
+
 @import '_reset.scss';
 
+
+body::-webkit-scrollbar {
+    width: 12px;               /* ширина scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: $black;        /* цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $rebeccapurple;    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+    border: 3px solid $white;  /* padding вокруг плашки */
+}

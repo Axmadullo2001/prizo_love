@@ -59,7 +59,7 @@
 
     &__link_item:hover {
         color: $light-red;
-    } 
+    }
 
     &__task_icon {
         position: absolute;
@@ -227,7 +227,11 @@
     &__right_part {
         display: flex;
         margin-right: 24px;
-        margin: 12px 0 5px 0px;
+        margin: 12px 0 5px 10px;
+    }
+
+    &__right_part:last-child {
+        margin: 12px 20px 5px 10px;
     }
 
     &__product_in_basket {
