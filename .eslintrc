@@ -9,7 +9,6 @@
     "prefer-const": "error",
     "quotes": ["error", "single"],
     "jsx-quotes": ["error", "prefer-double"],
-    "indent": ["warn", 2],
     "comma-dangle": ["error", "always-multiline"],
     "semi": ["warn", "never"],
     "import/order": ["error", {

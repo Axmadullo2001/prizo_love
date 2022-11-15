@@ -2,9 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router } from 'react-router-dom'
 
-import Routing from './App'
+import App from './App'
 
 import './scss/main.scss'
+
 
 const virtualDom = document.getElementById('root')
 
@@ -13,7 +14,7 @@ if (virtualDom !== null) {
   root.render(
     <React.StrictMode>
       <Router>
-        <Routing />
+        <App />
       </Router>
     </React.StrictMode>
   )

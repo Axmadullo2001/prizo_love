@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 
 import { HomePage } from './pages/HomePage'
 
-function Routing() {
+function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
@@ -11,4 +11,4 @@ function Routing() {
   )
 }
 
-export default Routing
+export default App
