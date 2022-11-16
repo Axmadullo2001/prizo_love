@@ -1,0 +1,112 @@
+@import '../../scss/variables';
+
+.footer {
+    background-color: $footer_bg;
+    position: relative;
+    padding-bottom: 50px;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    &__items:first-child {
+        margin: 50px 0 27px 24px;
+        display: block;
+    }
+
+    &__logo {
+        display: block;
+        margin-bottom: 27px;
+    }
+
+    &__produced {
+        display: flex;
+        color: $light-white;
+        margin-bottom: 25px;
+    }
+
+    &__author_rights {
+        width: 190px;
+        color: $light-white;
+    }
+
+    &__title {
+        font-size: 21px;
+        line-height: 28px;
+        color: $white;
+    }
+
+    &__info_link {
+        color: $dark-white;
+        line-height: 38px;
+    }
+
+    &__info_place {
+        color: $white;
+        margin: 25px 0 3px;
+    }
+
+    &__telephone_number {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 38px;
+        color: $white;
+    }
+
+    &__free_call {
+        color: $light-white;
+        width: 335px;
+        line-height: 21px;
+    }
+
+    &__email {
+        font-size: 15px;
+        line-height: 20px;
+        color: $white;
+    }
+
+    &__email_text {
+        color: $light-white;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 25px;
+        padding-bottom: 28px;
+        border: 1px solid $dashed-white;
+    }
+
+    &__first_block {
+        display: flex;
+    }
+
+    &__excepted {
+        font-size: 15px;
+        color: $dark-white;
+    }
+
+    &__svg_icon {
+        margin: 0 15px;
+    }
+
+    &__second_block {
+        display: flex;
+        margin: 0 94px 0 48px;
+    }
+
+    &__see_us {
+        color: $dark-white;
+    }
+
+    &__post_us {
+        color: $discount-color;
+        font-size: 15px;
+        line-height: 25px;
+        border-bottom: 3px dotted $discount-color;
+    }
+}

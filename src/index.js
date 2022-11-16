@@ -1,17 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { BrowserRouter as Router } from 'react-router-dom'
 
-import App from './App';
+import App from './App'
 
-import './index.css';
+import './scss/main.scss'
 
 const virtualDom = document.getElementById('root')
 
 if (virtualDom !== null) {
-  const root = ReactDOM.createRoot(virtualDom);
+  const root = ReactDOM.createRoot(virtualDom)
   root.render(
     <React.StrictMode>
-      <App />
+      <Router>
+        <App />
+      </Router>
     </React.StrictMode>
-  );
+  )
 }
