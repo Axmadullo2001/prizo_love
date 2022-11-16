@@ -6,7 +6,6 @@ import App from './App'
 
 import './scss/main.scss'
 
-
 const virtualDom = document.getElementById('root')
 
 if (virtualDom !== null) {
